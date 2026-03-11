@@ -70,20 +70,22 @@
       background: rgba(199,154,90,0.07);
     }
     :root {
-      --bg: #f5f5f7;
-      --card-bg: #ffffff;
-      --text: #1f1f23;
-      --muted: #6f6f7a;
-      --accent: #c79a5a;
-      --border: #e1e1e6;
+      --bg: #f9f9f9;
+      --card-bg: #fff;
+      --text: #3a2e1a;
+      --muted: #a18c6c;
+      --accent: #bfa06a;
+      --accent-light: #e6d3b3;
+      --border: #e6e1d6;
       --max-width: 760px;
+      --shadow: 0 4px 6px rgba(0,0,0,0.05);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont,
                    "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-      background: radial-gradient(circle at top, #ffffff 0, #f3f3f6 40%, #e9e9ef 100%);
+      background: var(--bg);
       color: var(--text);
     }
     header {
@@ -112,14 +114,16 @@
       background: var(--card-bg);
       border-radius: 24px;
       padding: 32px 24px 32px;
-      box-shadow:
-        0 18px 45px rgba(15,15,35,.09),
-        0 1px 0 rgba(255,255,255,.9) inset;
-      border: 1px solid rgba(255,255,255,.8);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
     }
     h1 {
-      font-size: 30px;
-      margin: 0 0 6px;
+      font-size: 38px;
+      margin: 0 0 12px;
+      font-family: 'Playfair Display', serif, 'Inter', Arial, sans-serif;
+      font-weight: 700;
+      letter-spacing: .02em;
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
     }
     .subtitle {
       font-size: 16px;
@@ -233,7 +237,7 @@
       </p>
 
       <div style="text-align:center;margin-bottom:24px;">
-        <a href="https://ricardoburitica.com" target="_blank" rel="noopener" style="display:inline-block;padding:12px 32px;border-radius:18px;background:var(--accent);color:#fff;font-weight:600;font-size:16px;text-decoration:none;box-shadow:0 2px 8px rgba(199,154,90,.12);transition:background .2s;">Ir a la web de servicios</a>
+        <a href="https://ricardoburitica.com" target="_blank" rel="noopener" style="display:inline-block;padding:14px 36px;border-radius:18px;background:var(--accent);color:#fff;font-weight:700;font-size:18px;text-decoration:none;box-shadow:0 4px 6px rgba(0,0,0,0.05);letter-spacing:.01em;transition:background .22s, color .22s, box-shadow .22s;">Ir a la web de servicios</a>
       </div>
       <div class="grid">
         <div class="item">
