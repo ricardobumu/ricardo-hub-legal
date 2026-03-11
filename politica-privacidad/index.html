@@ -33,10 +33,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 18px;
-      padding: 18px 0 0 0;
-      background: rgba(255,255,255,0.85);
-      backdrop-filter: blur(6px);
+      gap: 14px;
+      padding: 6px 0 0 0;
+      background: transparent;
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
@@ -44,37 +43,38 @@
     }
     .nav a {
       display: inline-block;
-      padding: 6px 14px;
-      border-radius: 12px;
-      background: linear-gradient(90deg, var(--accent) 0%, #e1e1e6 100%);
-      color: #fff;
-      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 8px;
+      background: transparent;
+      color: var(--accent);
+      font-weight: 500;
       font-size: 13px;
       text-decoration: none;
-      box-shadow: 0 1px 4px rgba(199,154,90,.10);
-      transition: background .2s, color .2s, box-shadow .2s;
-      border: none;
+      border: 1px solid var(--accent-light);
+      transition: color .2s, border-color .2s, background .2s;
     }
     .nav a:hover {
-      background: linear-gradient(90deg, #e1e1e6 0%, var(--accent) 100%);
-      color: var(--accent);
-      box-shadow: 0 4px 16px rgba(199,154,90,.18);
+      color: var(--text);
+      border-color: var(--accent);
+      background: var(--accent-light);
     }
     :root {
-      --bg: #f5f5f7;
-      --card-bg: #ffffff;
-      --text: #1f1f23;
-      --muted: #6f6f7a;
-      --accent: #c79a5a;
-      --border: #e1e1e6;
+      --bg: #f9f9f9;
+      --card-bg: #fff;
+      --text: #3a2e1a;
+      --muted: #a18c6c;
+      --accent: #bfa06a;
+      --accent-light: #e6d3b3;
+      --border: #e6e1d6;
       --max-width: 760px;
+      --shadow: 0 4px 6px rgba(0,0,0,0.05);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont,
                    "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-      background: radial-gradient(circle at top, #ffffff 0, #f3f3f6 40%, #e9e9ef 100%);
+      background: var(--bg);
       color: var(--text);
     }
     header {
@@ -103,10 +103,8 @@
       background: var(--card-bg);
       border-radius: 24px;
       padding: 32px 24px 40px;
-      box-shadow:
-        0 18px 45px rgba(15,15,35,.09),
-        0 1px 0 rgba(255,255,255,.9) inset;
-      border: 1px solid rgba(255,255,255,.8);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
     }
     .hero-eyebrow {
       font-size: 13px;
@@ -147,10 +145,10 @@
     .highlight {
       padding: 12px 14px;
       border-radius: 12px;
-      background: #fdf5ea;
-      border: 1px solid rgba(199,154,90,.4);
+      background: #f9f6f2;
+      border: 1px solid var(--accent-light);
       font-size: 13px;
-      color: #7b5a28;
+      color: #a18c6c;
       margin-top: 8px;
     }
     footer {
