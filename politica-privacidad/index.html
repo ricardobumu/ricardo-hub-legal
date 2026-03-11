@@ -33,6 +33,51 @@ Política de Privacidad
   <meta name="twitter:description" content="Cómo se recogen, usan y protegen tus datos personales y qué derechos tienes." />
   <meta name="twitter:image" content="https://ricardoburitica.eu/logo.png" />
   <style>
+                /* 1. FONDO DE PANTALLA: Contraste suave pero claro */
+                body {
+                  background-color: #f4f1ee;
+                  margin: 0;
+                  font-family: 'Inter', sans-serif;
+                  color: #333;
+                }
+
+                /* 2. LIMPIEZA: Eliminar los títulos que sobran a la izquierda */
+                header h1,
+                .site-title-hidden,
+                header > span:first-child {
+                  display: none !important;
+                }
+
+                /* 3. CABECERA: Sólida y limpia (Adiós a la transparencia rara) */
+                header {
+                  background-color: #ffffff;
+                  border-bottom: 1px solid #e5e0da;
+                  position: sticky;
+                  top: 0;
+                  z-index: 1000;
+                  padding: 15px 0;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 10px;
+                }
+
+                /* 4. LA TARJETA CENTRAL: Ahora sí va a resaltar */
+                .main-card, .container, .card {
+                  background-color: #ffffff;
+                  max-width: 850px;
+                  margin: 40px auto;
+                  padding: 60px;
+                  border-radius: 20px;
+                  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+                  border: 1px solid rgba(209, 191, 167, 0.3);
+                }
+
+                /* 5. TÍTULOS DENTRO DE LA TARJETA: Más fuerza */
+                h1, h2 {
+                  color: #5a4b3a;
+                  text-align: left;
+                }
             .header.scrolled {
               background: #ffffff;
               border-bottom: 1px solid #eee;
