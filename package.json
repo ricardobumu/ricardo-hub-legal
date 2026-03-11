@@ -1,0 +1,12 @@
+{
+  "name": "ricardo-hub-legal",
+  "version": "1.0.0",
+  "description": "Centro de información legal de Ricardo Buriticá. Documentación legal, privacidad, cookies, términos y cancelación.",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "author": "Ricardo Buriticá",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {}
+}
