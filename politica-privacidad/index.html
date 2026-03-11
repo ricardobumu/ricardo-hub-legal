@@ -29,6 +29,40 @@
   <meta name="twitter:description" content="Cómo se recogen, usan y protegen tus datos personales y qué derechos tienes." />
   <meta name="twitter:image" content="https://ricardoburitica.eu/logo.png" />
   <style>
+        /* Contenedor de la navegación */
+        .nav-container {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          padding: 20px 0;
+        }
+
+        /* Estilo de los botones (antes brillantes, ahora sutiles) */
+        .nav-button {
+          background-color: #f4eee8;
+          color: #8d775f;
+          border: 1px solid transparent;
+          padding: 8px 24px;
+          border-radius: 50px;
+          font-size: 0.9rem;
+          font-weight: 500;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          box-shadow: none;
+        }
+
+        /* Efecto al pasar el ratón (Hover) */
+        .nav-button:hover {
+          background-color: #eaddcf;
+          border-color: #d1bfa7;
+          color: #5a4b3a;
+        }
+
+        /* El botón de la página donde estás (Activo) */
+        .nav-button.active {
+          background-color: #d1bfa7;
+          color: white;
+        }
     .nav {
       display: flex;
       justify-content: center;
@@ -187,9 +221,9 @@
   </style>
 </head>
 <body>
-  <nav class="nav">
-    <a href="/" title="Inicio">Inicio</a>
-    <a href="https://ricardoburitica.com" target="_blank" rel="noopener" title="Servicios">Servicios</a>
+  <nav class="nav-container">
+    <a href="/" class="nav-button" title="Inicio">Inicio</a>
+    <a href="https://ricardoburitica.com" class="nav-button" target="_blank" rel="noopener" title="Servicios">Servicios</a>
   </nav>
   <header>
     <div class="brand">
