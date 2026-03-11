@@ -1,91 +1,26 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Ricardo Buriticá",
-      "url": "https://ricardoburitica.eu/",
-      "logo": "https://ricardoburitica.eu/logo.png",
-      "sameAs": [
-        "https://ricardoburitica.com/"
-      ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "url": "https://ricardoburitica.eu/",
-      "name": "Centro de información legal Ricardo Buriticá",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://ricardoburitica.eu/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
   <meta charset="utf-8">
   <title>Centro de información legal | Ricardo Buriticá</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Centro de información legal de Ricardo Buriticá: aviso legal, política de privacidad, cookies, términos de uso y política de cancelación.">
-  <link rel="canonical" href="https://ricardoburitica.eu/" />
-  <meta property="og:title" content="Centro legal Ricardo Buriticá" />
-  <meta property="og:description" content="Documentación legal, privacidad, cookies, términos y cancelación." />
-  <meta property="og:url" content="https://ricardoburitica.eu/" />
-  <meta property="og:image" content="https://ricardoburitica.eu/logo.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Centro legal Ricardo Buriticá" />
-  <meta name="twitter:description" content="Documentación legal, privacidad, cookies, términos y cancelación." />
-  <meta name="twitter:image" content="https://ricardoburitica.eu/logo.png" />
   <style>
-    .nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 14px;
-      padding: 6px 0 0 0;
-      background: transparent;
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .nav a {
-      display: inline-block;
-      padding: 3px 10px;
-      border-radius: 8px;
-      background: transparent;
-      color: var(--accent);
-      font-weight: 500;
-      font-size: 13px;
-      text-decoration: none;
-      border: 1px solid var(--border);
-      transition: color .2s, border-color .2s, background .2s;
-    }
-    .nav a:hover {
-      color: var(--text);
-      border-color: var(--accent);
-      background: rgba(199,154,90,0.07);
-    }
     :root {
-      --bg: #f9f9f9;
-      --card-bg: #fff;
-      --text: #3a2e1a;
-      --muted: #a18c6c;
-      --accent: #bfa06a;
-      --accent-light: #e6d3b3;
-      --border: #e6e1d6;
+      --bg: #f5f5f7;
+      --card-bg: #ffffff;
+      --text: #1f1f23;
+      --muted: #6f6f7a;
+      --accent: #c79a5a;
+      --border: #e1e1e6;
       --max-width: 760px;
-      --shadow: 0 4px 6px rgba(0,0,0,0.05);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont,
                    "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-      background: var(--bg);
+      background: radial-gradient(circle at top, #ffffff 0, #f3f3f6 40%, #e9e9ef 100%);
       color: var(--text);
     }
     header {
@@ -114,17 +49,14 @@
       background: var(--card-bg);
       border-radius: 24px;
       padding: 32px 24px 32px;
-      box-shadow: var(--shadow);
-      border: 1px solid var(--border);
+      box-shadow:
+        0 18px 45px rgba(15,15,35,.09),
+        0 1px 0 rgba(255,255,255,.9) inset;
+      border: 1px solid rgba(255,255,255,.8);
     }
     h1 {
-      font-size: 38px;
-      margin: 0 0 12px;
-      font-family: 'Playfair Display', serif, 'Inter', Arial, sans-serif;
-      font-weight: 700;
-      letter-spacing: .02em;
-      display: none;
-      <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+      font-size: 30px;
+      margin: 0 0 6px;
     }
     .subtitle {
       font-size: 16px;
@@ -180,33 +112,21 @@
       color: var(--muted);
     }
     footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      width: 100%;
-      padding: 40px 20px;
-      gap: 15px;
+      max-width: var(--max-width);
+      margin: 0 auto 40px;
+      padding: 0 16px;
       font-size: 12px;
       color: var(--muted);
-    }
-    .footer-links {
       display: flex;
+      justify-content: space-between;
+      gap: 12px;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
     }
-    .footer-links a {
+    footer a {
       color: var(--muted);
       text-decoration: none;
-      font-weight: 500;
-      padding: 0 4px;
-      transition: color .2s;
     }
-    .footer-links a:hover {
-      color: var(--accent);
-    }
+    footer a:hover { color: var(--accent); }
     @media (min-width: 720px) {
       .card { padding: 40px 40px 36px; }
       .grid { grid-template-columns: 1fr 1fr; }
@@ -214,14 +134,9 @@
   </style>
 </head>
 <body>
-  <nav class="nav">
-    <a href="/" title="Inicio">Inicio</a>
-    <a href="https://ricardoburitica.com" target="_blank" rel="noopener" title="Servicios">Servicios</a>
-  </nav>
   <header>
-    <div class="brand" style="display:flex;align-items:center;justify-content:center;gap:14px;">
-      <img src="/logo.png" alt="Logo Ricardo Buriticá" style="height:38px;width:auto;border-radius:8px;box-shadow:0 2px 8px rgba(199,154,90,.12);background:#fff;" />
-      <span>Ricardo Buriticá · Peluquería Consciente Barcelona</span>
+    <div class="brand">
+      <span>Ricardo Buriticá · Peluquería Consciente</span>
     </div>
   </header>
 
@@ -237,12 +152,9 @@
         de Peluquería Consciente de Ricardo Buriticá.
       </p>
 
-      <div style="text-align:center;margin-bottom:24px;">
-        <a href="https://ricardoburitica.com" target="_blank" rel="noopener" style="display:inline-block;padding:14px 36px;border-radius:18px;background:var(--accent);color:#fff;font-weight:700;font-size:18px;text-decoration:none;box-shadow:0 4px 6px rgba(0,0,0,0.05);letter-spacing:.01em;transition:background .22s, color .22s, box-shadow .22s;">Ir a la web de servicios</a>
-      </div>
       <div class="grid">
         <div class="item">
-          <a href="/aviso-legal/">
+          <a href="/aviso-legal.html">
             <div class="item-tag">Documento</div>
             <div class="item-title">Aviso legal</div>
             <div class="item-text">
@@ -252,7 +164,7 @@
         </div>
 
         <div class="item">
-          <a href="/politica-privacidad/">
+          <a href="/politica-privacidad.html">
             <div class="item-tag">Documento</div>
             <div class="item-title">Política de privacidad</div>
             <div class="item-text">
@@ -262,7 +174,7 @@
         </div>
 
         <div class="item">
-          <a href="/politica-cookies/">
+          <a href="/politica-cookies.html">
             <div class="item-tag">Documento</div>
             <div class="item-title">Política de cookies</div>
             <div class="item-text">
@@ -272,7 +184,7 @@
         </div>
 
         <div class="item">
-          <a href="/terminos-condiciones/">
+          <a href="/terminos-condiciones.html">
             <div class="item-tag">Documento</div>
             <div class="item-title">Términos y condiciones</div>
             <div class="item-text">
@@ -282,7 +194,7 @@
         </div>
 
         <div class="item">
-          <a href="/politica-cancelacion-devolucion/">
+          <a href="/politica-cancelacion-devolucion.html">
             <div class="item-tag">Documento</div>
             <div class="item-title">Política de cancelación y devolución</div>
             <div class="item-text">
@@ -296,32 +208,19 @@
         Última actualización conjunta de la documentación legal: Marzo 2026.
         Para cualquier duda adicional puedes escribir a
         <a href="mailto:info@ricardoburitica.com">info@ricardoburitica.com</a>.
-        <br><br>
-        <a href="https://tally.so/r/aQxl12" target="_blank" rel="noopener" style="color: var(--accent); font-weight: bold;">Consentimiento RGPD</a>
       </p>
     </article>
   </main>
 
   <footer>
-    <footer style="text-align:center;padding:32px 0 16px 0;">
-      <div style="font-size:15px;color:var(--muted);">
-        Peluquería Consciente en Barcelona, Cortes de cabello técnica visajista, Balayage, Coloración y Tratamientos capilares.
-      </div>
-      <div style="font-size:14px;color:var(--text);">
-        © 2026 Ricardo Buriticá Muñoz | CIF: 48072924A | Todos los derechos reservados.
-      </div>
-      <div style="font-size:13px;color:var(--muted);">
-        Esta web es el centro legal de Ricardo Buriticá. Para reservas y servicios, visita <a href="https://ricardoburitica.com" target="_blank" rel="noopener" style="color:var(--accent);font-weight:bold;">ricardoburitica.com</a>.
-      </div>
-      <div class="footer-links">
-        <a href="/aviso-legal/">Aviso legal</a>
-        <a href="/politica-privacidad/">Privacidad</a>
-        <a href="/politica-cookies/">Cookies</a>
-        <a href="/terminos-condiciones/">Términos</a>
-        <a href="/politica-cancelacion-devolucion/">Cancelación</a>
-        <a href="https://tally.so/r/aQxl12" target="_blank" rel="noopener">Consentimiento RGPD</a>
-        <a href="https://tally.so/r/ODP8DY" target="_blank" rel="noopener">Formulario ARCO</a>
-      </div>
-    </footer>
+    <div>© Ricardo Buriticá · Peluquería Consciente</div>
+    <div>
+      <a href="/aviso-legal.html">Aviso legal</a> ·
+      <a href="/politica-privacidad.html">Privacidad</a> ·
+      <a href="/politica-cookies.html">Cookies</a> ·
+      <a href="/terminos-condiciones.html">Términos</a> ·
+      <a href="/politica-cancelacion-devolucion.html">Cancelación</a>
+    </div>
+  </footer>
 </body>
 </html>
