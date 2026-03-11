@@ -76,28 +76,6 @@
     }
     * { box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont,
-                   "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-      background: radial-gradient(circle at top, #ffffff 0, #f3f3f6 40%, #e9e9ef 100%);
-      color: var(--text);
-    }
-    header {
-      padding: 32px 24px 16px;
-      text-align: center;
-    }
-    header .brand {
-      font-size: 14px;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    header .brand span {
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.7);
-      backdrop-filter: blur(8px);
     }
     main {
       max-width: var(--max-width);
@@ -192,14 +170,15 @@
       gap: 10px;
     }
     .footer-links a {
-      color: var(--muted);
+      color: #0074ff;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: bold;
       padding: 0 4px;
       transition: color .2s;
     }
     .footer-links a:hover {
-      color: var(--accent);
+      color: #0056b3;
+      text-decoration: underline;
     }
     @media (min-width: 720px) {
       header { padding-top: 40px; }

@@ -83,10 +83,9 @@
       background: linear-gradient(135deg, #fafafa, #ffffff);
       transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
     }
-    <!DOCTYPE html>
-      transform: translateY(-2px);
-      box-shadow: 0 10px 28px rgba(15,15,35,.06);
-      border-color: rgba(199,154,90,.5);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(15,15,35,.06);
+    border-color: rgba(199,154,90,.5);
     }
     .item a {
       color: inherit;
@@ -126,10 +125,15 @@
       flex-wrap: wrap;
     }
     footer a {
-      color: var(--muted);
+      color: #0074ff;
       text-decoration: none;
+      font-weight: bold;
+      transition: color .2s;
     }
-    footer a:hover { color: var(--accent); }
+    footer a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
     @media (min-width: 720px) {
       .card { padding: 40px 40px 36px; }
       .grid { grid-template-columns: 1fr 1fr; }
@@ -154,7 +158,7 @@
     <article class="card legal-container">
       <h1>Centro de información legal</h1>
       <p class="subtitle">
-        Todo lo relacionado con la parte legal de tus reservas y de tu experiencia conmigo, en un solo lugar.
+        Todo lo relacionado con la normativa y legalidad de tus reservas y de tu experiencia con mi marca Ricardo Buriticá, en un solo lugar.
       </p>
       <p class="intro">
         Desde aquí puedes acceder al aviso legal, la política de privacidad, la política de cookies,
