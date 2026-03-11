@@ -273,13 +273,13 @@
   </style>
 </head>
 <body>
-  <nav class="nav">
-    <a href="/" title="Inicio">Inicio</a>
-    <a href="https://ricardoburitica.com" target="_blank" rel="noopener" title="Servicios">Servicios</a>
+  <nav class="nav" role="navigation" aria-label="Navegación principal">
+    <a href="/" title="Inicio" tabindex="0">Inicio</a>
+    <a href="https://ricardoburitica.com" target="_blank" rel="noopener" title="Servicios" aria-label="Ir a servicios en ricardoburitica.com (abre en nueva pestaña)" tabindex="0">Servicios</a>
   </nav>
   <header>
     <div class="brand">
-      <img src="/logo.png" alt="Logo Ricardo Buriticá" style="height:48px;margin-bottom:8px;" />
+      <img src="/logo.png" alt="Logo Ricardo Buriticá, Peluquería Consciente Barcelona" style="height:48px;margin-bottom:8px;" />
       <span>Ricardo Buriticá · Peluquería Consciente Barcelona</span>
     </div>
   </header>
@@ -287,7 +287,7 @@
   <main>
     <article class="card">
       <div class="hero-eyebrow">Condiciones legales</div>
-      <h1>Términos y condiciones de uso y contratación</h1>
+      <h1 style="display:block;">Términos y condiciones de uso y contratación</h1>
       <p class="hero-subtitle">
         Aquí encontrarás de forma clara cómo funciona la contratación
         de servicios y las condiciones aplicables a tus reservas en Ricardo
@@ -605,21 +605,21 @@
   </main>
 
   <footer>
-    <footer style="text-align:center;padding:32px 0 16px 0;">
-      <nav class="footer-nav" style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-bottom:12px;">
-        <a href="/aviso-legal/">Aviso legal</a>
-        <a href="/politica-privacidad/">Privacidad</a>
-        <a href="/politica-cookies/">Cookies</a>
-        <a href="/terminos-condiciones/">Términos</a>
-        <a href="/politica-cancelacion-devolucion/">Cancelación</a>
-        <a href="/formulario-arco/">Formulario ARCO</a>
-        <a href="/consentimiento-rgpd/">Consentimiento RGPD</a>
+    <footer style="text-align:center;padding:32px 0 16px 0;" role="contentinfo" aria-label="Pie de página legal">
+      <nav class="footer-nav" role="navigation" aria-label="Navegación legal" style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-bottom:12px;">
+        <a href="/aviso-legal/" tabindex="0">Aviso legal</a>
+        <a href="/politica-privacidad/" tabindex="0">Privacidad</a>
+        <a href="/politica-cookies/" tabindex="0">Cookies</a>
+        <a href="/terminos-condiciones/" tabindex="0">Términos</a>
+        <a href="/politica-cancelacion-devolucion/" tabindex="0">Cancelación</a>
+        <a href="/formulario-arco/" aria-label="Formulario ARCO externo" tabindex="0">Formulario ARCO</a>
+        <a href="/consentimiento-rgpd/" aria-label="Consentimiento RGPD externo" tabindex="0">Consentimiento RGPD</a>
       </nav>
       <div class="footer-info">
-        Ricardo Buriticá Peluquería Consciente Barcelona. Cortes de cabello técnica visajista, Coloración, Balayage y Tratamientos capilares. <br>
-        © 2026 Ricardo Buriticá Muñoz | DNI: 48072924-A | info@ricardoburitica.com | 646246487 <br>
-        <p>Calle Rambla Volart 2 bis, 1º-4ª, 08041, Barcelona <br>
-        <p> Esta web centraliza la información legal de los dominios ricardoburitica.com, ricardoburitica.net y ricardoburitica.eu.<br>
+        <span style="color:#222;font-weight:600;">Ricardo Buriticá Peluquería Consciente Barcelona. Cortes de cabello técnica visajista, Coloración, Balayage y Tratamientos capilares.</span> <br>
+        <span style="color:#222;">© 2026 Ricardo Buriticá Muñoz | DNI: 48072924-A | info@ricardoburitica.com | 646246487</span> <br>
+        <span style="color:#444;">Calle Rambla Volart 2 bis, 1º-4ª, 08041, Barcelona</span> <br>
+        <span style="color:#444;">Esta web centraliza la información legal de los dominios ricardoburitica.com, ricardoburitica.net y ricardoburitica.eu.</span><br>
       </div>
     </footer>
 </body>
