@@ -1,163 +1,68 @@
-/* --- CONFIGURACIÓN MAESTRA RICARDO BURITICÁ --- */
-
 :root {
-  --bg-page: #f9f7f5; /* Crema orgánico para calidez */
-  --bg-card: #ffffff; /* Blanco puro para la tarjeta legal */
-  --text-main: #2d2a26; /* Marrón oscuro para legibilidad */
-  --text-muted: #6b6661;
-  --accent: #b59a7d; /* Dorado de marca */
-  --accent-light: #f4eee8;
-  --radius: 24px;
-  --shadow: 0 10px 40px rgba(0,0,0,0.04);
+  --bg-crema: #f5f5f7; /* Fondo suave de la página */
+  --bg-tarjeta: #ffffff; /* Blanco puro para el cuadro central */
+  --texto-principal: #1c1917;
+  --texto-suave: #6b7280;
+  --dorado: #b59a7d;
+  --purpura: #7c3aed; /* Color de los enlaces en tu captura */
+  --radio: 24px;
+  --sombra: 0 10px 40px rgba(0, 0, 0, 0.04);
 }
 
-* { 
-  box-sizing: border-box; 
-  margin: 0; 
-  padding: 0; 
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background: var(--bg-page);
-  color: var(--text-main);
-  line-height: 1.7;
-  min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg-crema);
+  color: var(--texto-principal);
+  line-height: 1.6;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-/* --- HEADER: Centrado y Limpio --- */
+/* --- HEADER: Igual al de tu Hub Legal --- */
 .site-header {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-  padding: 30px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid var(--accent-light);
+  padding: 40px 20px;
   text-align: center;
 }
 
-/* Bloqueo de títulos automáticos que se escapan a la izquierda */
-header h1, #site-title, .ghost-title { 
-  display: none !important; 
+.logo-rb {
+  width: 50px;
+  height: 50px;
+  background: var(--dorado);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  font-weight: bold;
 }
 
-.brand { 
-  font-weight: 700; 
-  letter-spacing: 2px; 
-  text-transform: uppercase; 
-  font-size: 1.1rem; 
-  margin-bottom: 5px; 
-}
+.brand-title { font-size: 14px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; margin-bottom: 4px; }
+.brand-sub { font-size: 12px; color: var(--texto-suave); margin-bottom: 15px; }
 
-.brand-sub { 
-  font-size: 0.75rem; 
-  color: var(--accent); 
-  text-transform: uppercase; 
-  letter-spacing: 1px; 
-  margin-bottom: 20px; 
-}
+.nav-links { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.nav-links a { color: var(--purpura); text-decoration: underline; font-size: 13px; }
 
-.nav-links { 
-  display: flex; 
-  justify-content: center; 
-  gap: 15px; 
-}
-
-.nav-item { 
-  text-decoration: none; 
-  color: var(--text-main); 
-  font-size: 13px; 
-  font-weight: 500;
-  padding: 8px 18px; 
-  border-radius: 99px; 
-  background: var(--accent-light); 
-  transition: 0.3s;
-}
-
-.nav-item:hover { 
-  background: var(--accent); 
-  color: white; 
-}
-
-/* --- EL CUADRO CENTRAL (LEGAL CONTAINER) --- */
-.legal-container {
+/* --- EL CUADRO CENTRAL (LA TARJETA) --- */
+.legal-card {
   max-width: 850px;
   width: 90%;
-  margin: 40px auto;
-  background: var(--bg-card);
-  padding: 60px 50px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  margin: 0 auto 60px;
+  background: var(--bg-tarjeta);
+  padding: 60px;
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
   flex-grow: 1;
 }
 
-h1 { 
-  font-size: 2.2rem; 
-  margin-bottom: 30px; 
-  color: var(--text-main); 
-  line-height: 1.2; 
-}
+/* Títulos dentro de la tarjeta */
+h1 { font-size: 32px; margin-bottom: 24px; text-align: left; }
+h2 { font-size: 20px; margin-top: 40px; margin-bottom: 16px; border-bottom: 1px solid #f3f4f6; padding-bottom: 8px; }
+.doc-label { font-size: 12px; text-transform: uppercase; color: var(--dorado); letter-spacing: 1px; display: block; margin-bottom: 8px; }
 
-h2 { 
-  font-size: 1.3rem; 
-  margin-top: 40px; 
-  margin-bottom: 15px; 
-  color: var(--accent); 
-  border-bottom: 1px solid var(--accent-light); 
-  padding-bottom: 8px; 
-}
-
-.doc-label {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--accent);
-  margin-bottom: 10px;
-  display: block;
-}
-
-/* --- FOOTER OPTIMIZADO --- */
-.site-footer {
-  background: white;
-  padding: 60px 20px;
-  text-align: center;
-  border-top: 1px solid var(--accent-light);
-  margin-top: auto;
-}
-
-.footer-nav { 
-  display: flex; 
-  justify-content: center; 
-  flex-wrap: wrap; 
-  gap: 15px; 
-  margin-bottom: 25px; 
-}
-
-.footer-nav a { 
-  color: var(--accent); 
-  text-decoration: none; 
-  font-size: 12px; 
-  font-weight: 500; 
-}
-
-.footer-info { 
-  font-size: 12px; 
-  color: var(--text-muted); 
-  line-height: 1.8; 
-}
-
-.footer-info p { 
-  margin-top: 10px; 
-}
-
-/* Responsive para que no se rompa en móviles */
-@media (max-width: 768px) {
-  .legal-container { 
-    margin: 20px auto; 
-    padding: 30px; 
-  }
-  h1 { font-size: 1.8rem; }
-}
+/* --- FOOTER --- */
+.site-footer { padding: 40px 20px; text-align: center; border-top: 1px solid #eee; background: white; margin-top: auto; }
+.footer-info { font-size: 12px; color: var(--texto-suave); line-height: 1.8; }
