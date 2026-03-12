@@ -23,3 +23,5 @@ yarn-error.log*
 .idea/
 .next/
 .parcel-cache/
+
+secrets.json        # Cualquier archivo de claves
